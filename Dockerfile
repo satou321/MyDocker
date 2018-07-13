@@ -1,2 +1,3 @@
-FROM web-base
-# ADD dummy /tmp/dummyfile
+FROM alpine
+RUN ["mkdir","/var/log/httpd"]
+# VOLUME [ "/var/log/httpd" ]

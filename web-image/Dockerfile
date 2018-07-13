@@ -1,3 +1,2 @@
-FROM centos:latest
-RUN ["yum","-y","install","httpd"]
-CMD [ "/usr/sbin/httpd" ,"-D","FOREGROUND"]
+FROM web-base
+# ADD dummy /tmp/dummyfile
